@@ -7,6 +7,13 @@ h1 {
     font-size: 7vw;
     margin-top: 0;
 }
+h2 ~ p {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 1em auto 0;
+    max-width: 70%;
+    text-align: center;
+}
 a {
     color: red;
 }
@@ -26,11 +33,32 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
+.headerNav a:hover,
+.headerNav a:active {
+  color: #ed6e2f;
+}
+.headerLogo:hover,
+.headerLogo:active {
+  opacity: 0.5;
+}
+.headerNav > li:first-child a {
+    color: #ed6e2f;
+}
+.headerNav > li:first-child a:hover {
+    color: #000;
+}
+.headerNav > li ~ li {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 1em;
+}
 
 /* HERO STYLES */
-.full-hero {
+.fullHero {
     background-color: #c7dbfc;
     height: 50vh;
+}
+.fullHero:hover {
+    background-color: #f1f1f1
 }
 
 /* SOCIAL STYLES */
@@ -50,6 +78,9 @@ a {
     text-decoration: none;
     vertical-align: middle;
     width: 2.5em;
+}
+.socialLink:hover {
+    background-color: aqua;
 }
 .socialList {
     list-style: none;
